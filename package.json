@@ -5,6 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "lint:js": "eslint **/*.js",
     "test": "sass-lint --config .scss-lint.yml --verbose --no-exit"
   },
   "repository": {
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/yairodriguez/es6.today#readme",
   "devDependencies": {
+    "eslint": "^3.12.2",
     "ghooks": "^2.0.0",
     "node-sass": "^4.1.1",
     "sass-lint": "^1.10.2"
