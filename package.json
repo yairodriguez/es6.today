@@ -24,7 +24,13 @@
   },
   "homepage": "https://github.com/yairodriguez/es6.today#readme",
   "devDependencies": {
+    "ghooks": "^2.0.0",
     "node-sass": "^4.1.1",
     "sass-lint": "^1.10.2"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm t"
+    }
   }
 }
