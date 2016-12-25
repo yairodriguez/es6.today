@@ -1,0 +1,36 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": [ "jsdoc", "closure" ]
+  },
+  "source": {
+    "include": [ "app/scripts" ],
+    "exclude": [ "tests", "node_modules" ],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "applicationName": "es6.today",
+    "disqus": "",
+    "googleAnalytics": "",
+    "openGraph": {
+      "title": "es6.today",
+      "type": "website",
+      "image": "",
+      "site_name": "",
+      "url": ""
+    },
+    "meta": {
+      "title": "es6.today",
+      "description": "Learn ES6 with a TDD strategy",
+      "keyword": "Learn, JavaScript, ES6, TDD"
+    },
+    "linenums": true
+  },
+  "opts": {
+    "destination": "docs/js/"
+  }
+}
