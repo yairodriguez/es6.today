@@ -1,0 +1,15 @@
+basePath: "https://github.com/yairodriguez/twitter"
+dest: "docs/sass"
+display:
+  access: ["private", "public"]
+  alias: true
+  watermark: true
+package:
+  title: "ES6 Docs"
+  name: "es6-docs"
+  version: "0.1.0"
+  license: "MIT"
+  homepage: "est.today"
+theme: "neat"
+groups:
+  undefined: Ungrouped

@@ -7,6 +7,9 @@
   "scripts": {
     "build": "rimraf .tmp && rimraf dist && gulp build",
     "clean": "gulp clean",
+    "docs:sass": "sassdoc app/styles/",
+    "predocs": "rimraf docs",
+    "docs": "npm run docs:sass",
     "lint:js": "eslint **/*.js",
     "lint:sass": "sass-lint --config .scss-lint.yml --verbose --no-exit",
     "pretest": "npm run lint:js && npm run lint:sass",
@@ -61,6 +64,8 @@
     "rimraf": "^2.5.4",
     "sass-lint": "^1.10.2",
     "sass-true": "^2.1.4",
+    "sassdoc": "^2.1.20",
+    "sassdoc-theme-neat": "0.0.2",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.8.0"
   },
