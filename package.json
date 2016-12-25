@@ -1,0 +1,30 @@
+{
+  "name": "es6.today",
+  "version": "1.0.0",
+  "description": "Learn ES6 with a TDD strategy.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "sass-lint --config .scss-lint.yml --verbose --no-exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yairodriguez/es6.today.git"
+  },
+  "keywords": [
+    "Learn",
+    "JavaScript",
+    "ES6",
+    "TDD"
+  ],
+  "author": "Yair <@imyairodriguez>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yairodriguez/es6.today/issues"
+  },
+  "homepage": "https://github.com/yairodriguez/es6.today#readme",
+  "devDependencies": {
+    "node-sass": "^4.1.1",
+    "sass-lint": "^1.10.2"
+  }
+}
