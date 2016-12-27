@@ -2,8 +2,12 @@
 
 @import 'true';
 
+@import '../../app/styles/theme/palette';
+
 @import '../../app/styles/functions/color.white';
+@import '../../app/styles/functions/palette';
 
 @import './white.spec';
+@import './palette.spec';
 
 @include report;
