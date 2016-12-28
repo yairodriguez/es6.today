@@ -1,5 +1,16 @@
 @charset 'utf-8';
 
-body {
-  margin: 0;
-}
+@import 'theme/palette';
+@import 'theme/fonts';
+
+@import 'mixins/typography';
+
+@import 'functions/color.white';
+@import 'functions/palette';
+@import 'functions/fonts';
+
+@import 'utils/typography';
+
+@import 'theme/setup';
+
+@import 'components/hero/index';
