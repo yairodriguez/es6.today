@@ -5,6 +5,7 @@
 @import '../../app/styles/theme/palette';
 @import '../../app/styles/theme/fonts';
 
+@import '../../app/styles/functions/color.black';
 @import '../../app/styles/functions/color.white';
 @import '../../app/styles/functions/palette';
 @import '../../app/styles/functions/fonts';
@@ -12,5 +13,6 @@
 @import './white.spec';
 @import './palette.spec';
 @import './font.spec';
+@import './black.spec';
 
 @include report;
