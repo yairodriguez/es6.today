@@ -5,12 +5,16 @@
 
 @import 'mixins/typography';
 
+@import 'functions/color.black';
 @import 'functions/color.white';
 @import 'functions/palette';
 @import 'functions/fonts';
 
-@import 'utils/typography';
-
 @import 'theme/setup';
 
-@import 'components/hero/index';
+@import 'utils/row';
+
+@import 'components/home/index';
+@import 'components/home/project';
+@import 'components/home/attributes';
+@import 'components/home/lines';

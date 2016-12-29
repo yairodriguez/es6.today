@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+.attributes {
+  font-family: fonts(code);
+  font-size: 16px;
+  padding-left: 0;
+  padding-right: 24px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    padding-left: calc(12.5% + 4px);
+    padding-right: 0;
+    width: 75%;
+
+    h2 {
+      margin-left: calc(20% - 4px);
+      padding-right: 48px;
+    }
+  }
+}
