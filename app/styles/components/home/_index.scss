@@ -9,7 +9,7 @@
   &__title {
     color: palette(mine-shaft);
     font-family: fonts(heading), serif;
-    font-size: 22px;
+    font-size: 26px;
     letter-spacing: 1px;
     margin: 0;
     padding-bottom: 20px;
@@ -27,8 +27,6 @@
 
   &__link {
     display: inline-block;
-    font-family: fonts(notes);
-    font-size: 14px;
     font-weight: 700;
     margin-top: 24px;
     text-decoration: none;
@@ -48,7 +46,6 @@
 
 @media screen and (min-width: 768px) {
   .hero__link {
-    font-size: 12px;
     margin-left: calc(20% - 4px);
   }
 }
