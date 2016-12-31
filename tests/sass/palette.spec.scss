@@ -1,0 +1,17 @@
+@charset 'utf-8';
+
+@include test-module('Sass :: palette function') {
+  @include test('Should return the appropiate HEX value from $palette mallard property') {
+    $actual: palette(spray);
+    $expected: #7DE7F1;
+
+    @include assert-equal($actual, $expected);
+  };
+
+  @include test('Should return the appropiate HEX value from $palette killarney property') {
+    $actual: palette(riptide);
+    $expected: #78EDA3;
+
+    @include assert-equal($actual, $expected);
+  };
+}

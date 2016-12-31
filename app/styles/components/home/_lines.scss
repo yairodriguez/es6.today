@@ -1,0 +1,51 @@
+@charset 'utf-8';
+
+.line {
+  background-color: black(0.07);
+  height: 100%;
+  left: 24px;
+  position: fixed;
+  top: 0;
+  width: 1px;
+
+  &.left,
+  &.middle {
+    display: none;
+  }
+
+  &.right {
+    left: auto;
+    right: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &.left,
+    &.middle {
+      display: block;
+    }
+
+    &.left {
+      left: calc(12.5% + 15px);
+    }
+
+    &.middle {
+      left: calc(25% + 17px);
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    left: 124px;
+
+    &.left {
+      left: calc(12.5% + 112px);
+    }
+
+    &.middle {
+      left: calc(25% + 92px);
+    }
+
+    &.right {
+      right: 124px;
+    }
+  }
+}

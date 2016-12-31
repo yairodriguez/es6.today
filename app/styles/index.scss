@@ -1,5 +1,20 @@
 @charset 'utf-8';
 
-body {
-  margin: 0;
-}
+@import 'theme/palette';
+@import 'theme/fonts';
+
+@import 'fonts/roboto';
+
+@import 'functions/color.black';
+@import 'functions/color.white';
+@import 'functions/palette';
+@import 'functions/fonts';
+
+@import 'theme/setup';
+
+@import 'utils/row';
+
+@import 'components/home/index';
+@import 'components/home/project';
+@import 'components/home/attributes';
+@import 'components/home/lines';

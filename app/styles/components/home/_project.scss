@@ -1,0 +1,43 @@
+@charset 'utf-8';
+
+.project {
+  background: transparent;
+  border-top: 1px solid black(0.07);
+  margin: 0;
+  min-height: 256px;
+  padding-bottom: 97px;
+  position: relative;
+  width: 100%;
+
+  &__subtitle,
+  &__content {
+    margin: 0;
+  }
+
+  &__subtitle {
+    color: black(0.45);
+    font-weight: normal;
+    padding: 0;
+    width: calc(20% - 4px);
+  }
+
+  &__content {
+    padding: 0 0 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project__subtitle {
+    text-indent: -10px;
+  }
+
+  .project__content {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project__subtitle {
+    text-indent: 0;
+  }
+}

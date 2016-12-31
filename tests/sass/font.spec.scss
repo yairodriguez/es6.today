@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+@include test-module('Sass :: font function') {
+  @include test('Should return the appropiate font') {
+    $actual: fonts(notes);
+    $expected: 'dejarip';
+
+    @include assert-equal($actual, $expected);
+  };
+}

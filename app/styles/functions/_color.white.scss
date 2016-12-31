@@ -1,5 +1,61 @@
 @charset 'utf-8';
 
+/// Returns a rgba (value) that can be assigned to any property of colour; like
+/// `color` or `background-color`.
+///
+/// @name color.white
+/// @access public
+/// @author Yair Rodriguez
+/// @since 1.0.0
+///
+/// @param {Number} $opacity [1]
+///   A value between 0 and 1.
+///
+///   If param is not provided, `$opacity: 1` is going to be used.
+///
+///   The number can also be between 0.0 and 1.0, like 0.6, 0.7 and so on.
+///
+/// @example scss - Usage
+///   .element {
+///     color: white(90);
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     color: rgba(255, 255, 255, 90);
+///   }
+///
+/// @example scss - Usage
+///
+///   .element {
+///     color: white;
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     color: rgba(255, 255, 255, 1);
+///   }
+///
+/// @example scss - Usage
+///   .element {
+///     color: white(0.8);
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     color: rgba(255, 255, 255, 0.8);
+///   }
+///
+/// @example scss - Usage
+///   .element {
+///     background-color: white(0.8);
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     background-color: rgba(255, 255, 255, 0.8);
+///   }
+
 @function white($opacity: 1) {
   @return rgba(255, 255, 255, $opacity);
 }
