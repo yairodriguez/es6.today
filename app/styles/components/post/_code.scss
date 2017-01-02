@@ -1,0 +1,58 @@
+@charset 'utf-8';
+
+code,
+pre {
+  font-family: Menlo, Consolas, monospace;
+
+  &.prettyprint {
+    border: 0;
+    overflow-x: scroll;
+    padding: 250px 0;
+
+    @media screen and (min-width: 768px) {
+      overflow-x: none;
+      padding: 250px 220px;
+    }
+  }
+}
+
+.prettyprint {
+  background-color: palette(fantasy);
+  font-size: 12px;
+  line-height: 1.7;
+
+  // sass-lint:disable class-name-format
+  .L0,
+  .L1,
+  .L2,
+  .L3,
+  .L4,
+  .L5,
+  .L6,
+  .L7,
+  .L8,
+  .L9 {
+    background-color: palette(fantasy);
+    color: palette(petite-orchid);
+    list-style-type: decimal;
+  }
+  // sass-lint:enable class-name-format
+
+  .str,
+  .kwd,
+  .com,
+  .typ,
+  .lit,
+  .pun,
+  .pln,
+  .tag,
+  .atn,
+  .atv,
+  .dec {
+    color: palette(cardinal);
+  }
+
+  .com {
+    color: palette(petite-orchid);
+  }
+}
