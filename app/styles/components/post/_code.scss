@@ -1,0 +1,69 @@
+@charset 'utf-8';
+
+.code {
+  background-color: palette(fantasy);
+  height: 100vh;
+  min-height: 100vh;
+}
+
+pre {
+  margin: 0 auto;
+  max-width: 540px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+code,
+pre {
+  font-family: Menlo, Consolas;
+
+  &.prettyprint {
+    border: 0;
+    overflow-x: scroll;
+
+    @media screen and (min-width: 768px) {
+      overflow-x: none;
+    }
+  }
+}
+
+.prettyprint {
+  font-size: 12px;
+  line-height: 1.7;
+
+  // sass-lint:disable class-name-format
+  .L0,
+  .L1,
+  .L2,
+  .L3,
+  .L4,
+  .L5,
+  .L6,
+  .L7,
+  .L8,
+  .L9 {
+    background-color: palette(fantasy);
+    color: palette(petite-orchid);
+    list-style-type: decimal;
+  }
+  // sass-lint:enable class-name-format
+
+  .str,
+  .kwd,
+  .com,
+  .typ,
+  .lit,
+  .pun,
+  .pln,
+  .tag,
+  .atn,
+  .atv,
+  .dec {
+    color: palette(cardinal);
+  }
+
+  .com {
+    color: palette(petite-orchid);
+  }
+}
