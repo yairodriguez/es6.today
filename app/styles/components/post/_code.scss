@@ -1,23 +1,34 @@
 @charset 'utf-8';
 
+.code {
+  background-color: palette(fantasy);
+  height: 100vh;
+  min-height: 100vh;
+}
+
+pre {
+  margin: 0 auto;
+  max-width: 540px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 code,
 pre {
-  font-family: Menlo, Consolas, monospace;
+  font-family: Menlo, Consolas;
 
   &.prettyprint {
     border: 0;
     overflow-x: scroll;
-    padding: 250px 0;
 
     @media screen and (min-width: 768px) {
       overflow-x: none;
-      padding: 250px 220px;
     }
   }
 }
 
 .prettyprint {
-  background-color: palette(fantasy);
   font-size: 12px;
   line-height: 1.7;
 

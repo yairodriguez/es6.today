@@ -8,7 +8,7 @@
   background-color: white(1);
   color: palette(cardinal);
   font-family: fonts(text);
-  font-size: 16.4px;
+  font-size: 16px;
   line-height: 1.5;
   margin: 0 auto;
   max-width: 980px;
@@ -20,12 +20,15 @@
 
   &__copy {
     padding: 150px 30px;
+
+    .article__subtitle {
+      margin: 35px 0 45px;
+    }
   }
 
   &__title,
   &__subtitle {
-    font-size: 8px;
-    font-weight: 700;
+    font-size: 9px;
     letter-spacing: 1px;
     line-height: 1;
     text-transform: uppercase;
