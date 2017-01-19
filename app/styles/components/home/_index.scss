@@ -4,7 +4,27 @@
   // background: linear-gradient(to bottom, #78eda3 0%, #7de7f1 50%, #f36866 100%);
   background: linear-gradient(to bottom, palette(riptide) 0%, palette(spray) 100%);
   min-height: 100%;
-  padding: 96px 0 0 24px;
+
+  &__about {
+    height: 100%;
+  }
+
+  &__copy {
+    font-family: fonts(text);
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 420px;
+    padding: 35px;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__index {
+    padding: 96px 0 0 24px;
+  }
 
   &__title {
     color: palette(mine-shaft);
@@ -50,7 +70,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .hero {
+  .hero__index {
     padding: 96px 0 0 124px;
   }
 }
