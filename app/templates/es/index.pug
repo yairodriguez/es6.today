@@ -1,0 +1,29 @@
+extends ../layout/master
+
+block body
+  body.hero
+    main.hero__about
+      section.hero__copy
+        span.article__subtitle #[a(href='http://localhost:9000/index.html') EN] #[a(href='http://localhost:9000/es/index.html').active ES]
+        p ¿Diseñador? ¿Programador? ¿Ingeniero? ¿Aficionado al código?
+        p ¿Te gusta JavaScript? ¿Has trabajado con código JavaScript que sólo Dios sabe qué es lo que hace realmente? ¿Te gustaría escribir la última version de JavaScript (ES6)? ¿Has escuchado sobre TDD? ¿No? ¿Test–Driven Development? ¿Te gustaría aprender las posibilidades increíbles usando TDD? #[em Okay], estoy aquí para ayudar.
+        p Además, ¿te preocupa el diseño? Quiero decir, ¿te preocupa tener una agradable experiencia de lectura, tipografía, colores? Perfecto, a mí tambíen. Construí éste sitio con esa meta en mente. Más de eso, #[strong: a(href='http://localhost:9000/es/about.html') aquí].
+        p Ten cuidado.
+    section.hero__index
+      .project
+        .attributes
+          h2.hero__title
+          .row
+            h4.project__subtitle
+            p.project__content
+          .row
+            h4.project__subtitle
+            p.project__content
+          .row
+            h4.project__subtitle
+            p.project__content
+          a(href='#').hero__link
+      .line
+      .line.left
+      .line.middle
+      .line.right
