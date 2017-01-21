@@ -1,0 +1,19 @@
+extends ../layout/master
+
+block body
+  body.post
+    section.article
+      header
+        h1.article__title #[span.article__subtitle About]
+      main.article__copy
+        span.article__subtitle #[a(href='http://localhost:9000/about.html') EN] #[a(href='http://localhost:9000/es/about.html').active ES]
+        p El año pasado estuve aprendiendo EcmaScript 6, no fue difícil encontrar material en Internet. Afuera hay una cantidad bastante grande de blogs. Libros. Websites. Posts. Artículos. Ensayos que hablan sobre la última versión estándar. Claro, no es soportado por los navegadores, al menos no un 100%, aún. Pero, ¿a quién le importa? Estamos en una revolución digital. Nos movemos rápido, rompemos cosas, aprendemos un nuevo #[em framework] cada día. Y cuando estuve aprendiendo encontré un no–problema, ninguno se preocupa por el diseño. No me mal interpreten, la mayoría no se preocupa por escribir una publicación elegante. #[strong ¡Es sólo código!] Lo sé, además, ¿cómo es posible escribir una publicación sobre un tema técnico? ¿Hay lugar para agregar diseño en el código? Preguntas difíciles. Es por eso que publiqué éste sitio.
+        p Esa es mi meta principal. Escribir y enseñar ES6. Será un lugar para compartir conocimiento y, ¡sí! Me preocuparé por el diseño. Por aquellos que están leyendo en sus smartphone, por mejorar la experiencia de lectura no importe la plataforma donde se lea.
+        p Ahora, ¿estás cansado de ver otro sitio web tratando de explicar ES6? Tal vez, pero ningunó está solicitando ser original. Además, te voy a enseñar ES6 con una estrategia TDD. Sí, Test–Driven Development. #[strong ¿Por qué?] ¿Por qué no? Será una experiencia #[em mind–blowing].
+        p Ya lo dijo Seth Godin:
+        blockquote
+          p John Koenig lo llama vemödalen. El miedo de estar haciendo algo que realmente ya fue hecho, que todo lo que se puede hacer ya está hecho.
+        p Claro, ya fue hecho antes. Pero no por mí. Y no para ustedes.
+        p(style='margin-top: 45px;') Hola, soy #[strong: a(href='https://twitter.com/imyairodriguez', target='_blank') Yair], un Full Stack Developer. ¿Te gusta? Estoy buscando un trabajo.
+      footer
+        small.credit Éstas publicaciones serán distribuidas aquí como “borradores”, gratis para leer. Pero también están siendo editadas, producidas y publicadas como un libro. Regresa pronto.
