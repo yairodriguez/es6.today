@@ -96,7 +96,7 @@ gulp.task('clean', () => {
 
 gulp.task('pug', () => {
   return gulp
-    .src('app/templates/*.pug')
+    .src(['app/templates/**/*.pug', '!app/templates/layout/*.pug'])
     .pipe($.plumber({
       errorHandler: $.notify.onError({
         title: 'JADE',
